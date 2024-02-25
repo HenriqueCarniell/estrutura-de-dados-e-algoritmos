@@ -36,6 +36,34 @@ deleteQueuesItens()
 
 console.log(itensQueue)
 
+// Three
+
+let arvore = {
+    valor: "raiz",
+    esquerda: {
+        valor: "esquerda",
+        esquerda: null,
+        direita: null
+    },
+    direita: {
+        valor: "direita",
+        esquerda: null,
+        direita: null
+    }
+};
+
+function exibirArvore(no) {
+    if(no == null) {
+        return;
+    }
+    console.log(no.valor);
+    exibirArvore(no.esquerda);
+    exibirArvore(no.direita);
+}
+
+exibirArvore(arvore);
+
+
 // Busca Binaria
 
 //Melhor em achar um dado no array ORDENADO porque tem um tempo de O(log n)
