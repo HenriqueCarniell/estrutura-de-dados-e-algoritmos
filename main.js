@@ -1,3 +1,41 @@
+// Pilhas
+let itensStack = []
+
+let addStackItens = (item) => {
+   return itens.push(item);
+}
+
+let deleteStackItem = () => {
+    if(itens.length == 0) {
+        return null
+    }
+
+itens.pop()
+}
+
+console.log(itensStack)
+
+// Filas
+
+let itensQueue = []
+
+let addQueuesItens = (item) => {
+    return itensQueue.push(item);
+}
+
+let deleteQueuesItens = () => {
+    if(itensQueue.length == 0) {
+        return null
+    }
+itensQueue.shift()
+}
+
+addQueuesItens(1)
+
+deleteQueuesItens()
+
+console.log(itensQueue)
+
 // Busca Binaria
 
 //Melhor em achar um dado no array ORDENADO porque tem um tempo de O(log n)
